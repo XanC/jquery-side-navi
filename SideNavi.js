@@ -88,6 +88,7 @@ var SideNavi = ( function () {
 				pos = (isVisible) ?  getPosEnd () : getPosStart ();
 				container.css(posDirection, pos+'px');
 				isSlideing = false;
+				container.trigger("SideNavi:naviToggle", isVisible);
 
 			} else {
 				container.css(posDirection, pos+'px');
